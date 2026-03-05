@@ -1,0 +1,5 @@
+WORKDIR /app
+COPY . .
+RUN npm install
+expose 5000
+CMD ["npm","server.js"]
